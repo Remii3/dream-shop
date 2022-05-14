@@ -1,18 +1,22 @@
 #mainPage {
-  min-height: 200vh;
-}
-.test1 {
-  background-color: #ffcc00;
-  height: 50px;
-  width: 50%;
-}
-.test2 {
-  background-color: #cd0067;
-  height: 50px;
-  width: 50%;
-}
-.test3 {
-  background-color: #00ccff;
-  height: 50px;
-  width: 50%;
+  min-height: 100vh;
+  padding: 57px 1rem;
+
+  .mainPage_newSpace,
+  .mainPage_popularSpace,
+  .mainPage_mostLikedSpace {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 2rem 0;
+
+    .newSpace_cardsSpace {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+      padding-top: 2rem;
+    }
+  }
 }

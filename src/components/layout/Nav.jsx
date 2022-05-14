@@ -9,14 +9,6 @@ const Nav = () => {
     setBurgerActive((prevState) => !prevState);
   };
 
-  const navClickHandler = (e) => {
-    const allNavPageLinks = document.querySelectorAll(`.pages_link`);
-    const selectedEl = document.querySelector(`.${e.target.classList[1]}`);
-
-    allNavPageLinks.forEach((item) => item.classList.remove("selected"));
-    selectedEl.classList.add("selected");
-  };
-
   return (
     <nav id="navigationSpace">
       <section className="navigationSpace_innerSection">
@@ -45,20 +37,10 @@ const Nav = () => {
           }`}
         >
           <Link to={"/"}>
-            <span
-              className="pages_link navLink1"
-              onClick={navClickHandler.bind(this)}
-            >
-              Home
-            </span>
+            <span className="pages_link navLink1">Home</span>
           </Link>
           <Link to={"/products"}>
-            <span
-              className="pages_link navLink2"
-              onClick={navClickHandler.bind(this)}
-            >
-              Products
-            </span>
+            <span className="pages_link navLink2">Products</span>
           </Link>
         </div>
       </section>

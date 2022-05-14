@@ -1,0 +1,53 @@
+@import "../_variable";
+
+.cardSpace {
+  padding: 1rem;
+  background-color: $mainColor;
+  border-radius: 1.2rem;
+  min-width: 270px;
+
+  text-align: left;
+  box-shadow: -0.1rem 0.1rem 5px rgba(0, 0, 0, 0.3);
+
+  .cardSpace_name {
+    font-size: 1.9rem;
+    color: #fff;
+  }
+  .cardSpace_desc {
+    margin-top: 2.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 40px;
+    white-space: nowrap;
+    font-size: 1.1rem;
+  }
+  .cardSpace_buySpace {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .cardSpace_addToCartBtn {
+    all: unset;
+    border: 2px solid $decorativeColor;
+    padding: 0.5rem 1rem;
+    border-radius: 0.75rem;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: $decorativeColor;
+  }
+  .cardSpace_info {
+    text-decoration: none;
+    background-color: #fff;
+    padding: 0.15rem 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    color: $decorativeColor;
+    border: 2px solid $decorativeColor;
+  }
+  .cardSpace_price {
+    font-size: 1.3rem;
+    color: #fff;
+  }
+}

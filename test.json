@@ -1,0 +1,60 @@
+{
+  "items": {
+    "dreams": [
+      {
+        "id": "0",
+        "name": "mystic",
+        "description": "something very interesting",
+        "price": "12.55",
+        "created": "14.09.2014",
+        "popularity": "12",
+        "likes": "521"
+      },
+      {
+        "id": "1",
+        "name": "fantastic",
+        "description": "something abnormal",
+        "price": "15.55",
+        "created": "12.09.2014",
+        "popularity": "33",
+        "likes": "121"
+      },
+      {
+        "id": "2",
+        "name": "interesting",
+        "description": "something very interesting",
+        "price": "12.55",
+        "created": "24.09.2014",
+        "popularity": "51",
+        "likes": "1221"
+      },
+      {
+        "id": "3",
+        "name": "fascinating",
+        "description": "something abnormal",
+        "price": "15.55",
+        "created": "31.09.2014",
+        "popularity": "22",
+        "likes": "911"
+      },
+      {
+        "id": "4",
+        "name": "odd",
+        "description": "something very interesting",
+        "price": "12.55",
+        "created": "11.09.2014",
+        "popularity": "19",
+        "likes": "512"
+      },
+      {
+        "id": "5",
+        "name": "creative",
+        "description": "something abnormal",
+        "price": "15.55",
+        "created": "1.09.2014",
+        "popularity": "81",
+        "likes": "621"
+      }
+    ]
+  }
+}

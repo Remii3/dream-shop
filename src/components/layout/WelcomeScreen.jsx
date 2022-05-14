@@ -9,6 +9,18 @@ const WelcomeScreen = () => {
 
   return (
     <section id="welcomeScreen">
+      <ul className="welcomeScreen_animationSpace">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
       <div className="shadowOverlay" />
       <div className="welcomeScreen_titleSpace">
         <h1 className="titleSpace_title">
