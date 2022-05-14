@@ -1,0 +1,24 @@
+#navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #00ccff;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+#navigation .navigation_pages {
+  flex-basis: 33.3333333333%;
+}
+#navigation .navigation_title {
+  color: #fff;
+  font-size: 1.8rem;
+  flex-basis: 33.3333333333%;
+  text-align: center;
+}
+#navigation .navigation_cart {
+  flex-basis: 33.3333333333%;
+  text-align: right;
+}/*# sourceMappingURL=nav.css.map */

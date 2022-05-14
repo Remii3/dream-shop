@@ -1,0 +1,21 @@
+#mainPage {
+  min-height: 200vh;
+}
+
+.test1 {
+  background-color: #ffcc00;
+  height: 50px;
+  width: 50%;
+}
+
+.test2 {
+  background-color: #cd0067;
+  height: 50px;
+  width: 50%;
+}
+
+.test3 {
+  background-color: #00ccff;
+  height: 50px;
+  width: 50%;
+}/*# sourceMappingURL=mainPage.css.map */

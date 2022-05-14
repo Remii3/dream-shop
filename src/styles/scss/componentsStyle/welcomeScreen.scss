@@ -1,0 +1,61 @@
+@import "../_variable";
+
+#welcomeScreen {
+  height: 60vh;
+  background-color: $mainColor;
+  width: 100%;
+  position: relative;
+
+  .shadowOverlay {
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 100%;
+    width: 100%;
+  }
+
+  .welcomeScreen_titleSpace {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 1rem;
+    text-align: center;
+
+    .titleSpace_title {
+      color: #fff;
+      text-shadow: -0.1rem 0.1rem 5px rgba(0, 0, 0, 0.5);
+      font-size: 2.1rem;
+      text-align: left;
+
+      .title_coloredLetter {
+        color: $secondaryColor;
+      }
+      @media screen and (min-width: 400px) {
+        font-size: 2.6rem;
+      }
+      @media screen and (min-width: 600px) {
+        font-size: 3rem;
+      }
+    }
+
+    .titleSpace_seeMoreBtn {
+      all: unset;
+      border: 2px solid #fff;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 0.75rem;
+      font-size: 1.4rem;
+      padding: 0.5rem 1.5rem;
+      margin: 2rem 0rem;
+      cursor: pointer;
+      color: #fff;
+      transition: all 0.3s ease;
+      box-shadow: -0.1rem 0.1rem 5px rgba(0, 0, 0, 0.5);
+
+      &:hover,
+      &:focus {
+        border-color: $decorativeColor;
+        background-color: $decorativeColor;
+      }
+    }
+  }
+}

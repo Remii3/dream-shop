@@ -1,0 +1,21 @@
+#welcomeScreen {
+  height: 70vh;
+  background-color: #00ccff;
+  width: 100%;
+  position: relative;
+}
+#welcomeScreen .shadowOverlay {
+  z-index: 2;
+  filter: brightness(0.1);
+  height: 100%;
+  width: 100%;
+}
+#welcomeScreen .welcomeScreen_titleSpace {
+  position: relative;
+  top: 30%;
+  margin: 0 auto;
+  width: 300px;
+}
+#welcomeScreen .welcomeScreen_titleSpace .titleSpace_title {
+  color: #fff;
+}/*# sourceMappingURL=welcomeScreen.css.map */
