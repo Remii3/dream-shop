@@ -3,7 +3,7 @@
 .cardSpace {
   padding: 1rem;
   background-color: $mainColor;
-  border-radius: 1.2rem;
+  border-radius: 0.7rem;
   min-width: 270px;
 
   text-align: left;
@@ -35,16 +35,33 @@
     border-radius: 0.75rem;
     font-size: 1.1rem;
     color: #fff;
+    cursor: pointer;
     background-color: $decorativeColor;
+    transition: all 0.3s ease;
+    &:hover {
+      filter: brightness(0.8);
+    }
+    &:active {
+      filter: brightness(0.6);
+    }
   }
   .cardSpace_info {
     text-decoration: none;
     background-color: #fff;
-    padding: 0.15rem 0.5rem;
-    border-radius: 0.5rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 0.2rem;
     font-size: 1.1rem;
-    color: $decorativeColor;
-    border: 2px solid $decorativeColor;
+    color: $secondaryColor;
+    border: 2px solid $secondaryColor;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $secondaryColor;
+      color: #fff;
+    }
+    &:active {
+      filter: brightness(0.6);
+    }
   }
   .cardSpace_price {
     font-size: 1.3rem;

@@ -1,0 +1,19 @@
+.cartTitle {
+  text-align: center;
+  padding: 2rem 0;
+}
+#cartSpace {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - (57px + 103px + 63px));
+  .cartSpace_itemSpace {
+    flex-basis: 70%;
+  }
+  .cartSpace_purchaseSpace {
+    flex-basis: 20%;
+  }
+  @media screen and (min-width: 600px) {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}

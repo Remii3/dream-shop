@@ -1,0 +1,22 @@
+.cartTitle {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+#cartSpace {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 223px);
+}
+#cartSpace .cartSpace_itemSpace {
+  flex-basis: 70%;
+}
+#cartSpace .cartSpace_purchaseSpace {
+  flex-basis: 20%;
+}
+@media screen and (min-width: 600px) {
+  #cartSpace {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=cartPage.css.map */

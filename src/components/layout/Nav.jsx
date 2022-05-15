@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import { ThemeContext } from "../../context/ContextProvider";
 import "../../styles/scss/componentsStyle/nav.scss";
 
 const Nav = () => {
   const [burgerActive, setBurgerActive] = useState(false);
+  const cart = useContext(ThemeContext);
 
   const burgerClickHandler = () => {
     setBurgerActive((prevState) => !prevState);
@@ -27,7 +29,11 @@ const Nav = () => {
 
           <p className="navigation_cart">
             <Link to={"/cart"}>
-              <i className="fa-solid fa-cart-shopping"></i>
+              <i className="fa-solid fa-cart-shopping">
+                {cart.totalAmount !== 0 && (
+                  <span className="cartItemsQuantity">{cart.totalAmount}</span>
+                )}
+              </i>
             </Link>
           </p>
         </div>

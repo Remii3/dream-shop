@@ -3,6 +3,7 @@ import MainPage from "./pages/MainPage";
 import ProductsPage from "./pages/ProductsPage";
 import { Route, Routes } from "react-router-dom";
 import { useEffect, useState } from "react";
+import CartPage from "./pages/CartPage";
 const App = () => {
   const [shopItems, setShopItems] = useState(null);
 
@@ -19,7 +20,7 @@ const App = () => {
   }, []);
 
   return (
-    <div>
+    <>
       <Routes>
         <Route
           path="/"
@@ -35,9 +36,9 @@ const App = () => {
           path="/products"
           element={<ProductsPage shopItems={shopItems} />}
         />
-        <Route path="/cart" element={<ProductsPage />} />
+        <Route path="/cart" element={<CartPage />} />
       </Routes>
-    </div>
+    </>
   );
 };
 

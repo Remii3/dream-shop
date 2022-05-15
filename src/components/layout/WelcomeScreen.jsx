@@ -27,8 +27,13 @@ const WelcomeScreen = () => {
           W<span className="title_coloredLetter">el</span>co
           <span className="title_coloredLetter">m</span>e
         </h1>
-        <h1 className="titleSpace_title">To</h1>
-        <h1 className="titleSpace_title">GooDreamShop</h1>
+        <h1 className="titleSpace_title">
+          <span className="title_coloredLetter">T</span>o
+        </h1>
+        <h1 className="titleSpace_title">
+          G<span className="title_coloredLetter">oo</span>Dream
+          <span className="title_coloredLetter">Sh</span>op
+        </h1>
         <button
           className="titleSpace_seeMoreBtn"
           onClick={seeMoreBtnClickHandler}

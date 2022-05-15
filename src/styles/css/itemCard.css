@@ -1,0 +1,64 @@
+.cardSpace {
+  padding: 1rem;
+  background-color: #00ccff;
+  border-radius: 0.7rem;
+  min-width: 270px;
+  text-align: left;
+  box-shadow: -0.1rem 0.1rem 5px rgba(0, 0, 0, 0.3);
+}
+.cardSpace .cardSpace_name {
+  font-size: 1.9rem;
+  color: #fff;
+}
+.cardSpace .cardSpace_desc {
+  margin-top: 2.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 40px;
+  white-space: nowrap;
+  font-size: 1.1rem;
+}
+.cardSpace .cardSpace_buySpace {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cardSpace .cardSpace_addToCartBtn {
+  all: unset;
+  border: 2px solid #ffcc00;
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  font-size: 1.1rem;
+  color: #fff;
+  cursor: pointer;
+  background-color: #ffcc00;
+  transition: all 0.3s ease;
+}
+.cardSpace .cardSpace_addToCartBtn:hover {
+  filter: brightness(0.8);
+}
+.cardSpace .cardSpace_addToCartBtn:active {
+  filter: brightness(0.6);
+}
+.cardSpace .cardSpace_info {
+  text-decoration: none;
+  background-color: #fff;
+  padding: 0.1rem 0.5rem;
+  border-radius: 0.2rem;
+  font-size: 1.1rem;
+  color: #cd0067;
+  border: 2px solid #cd0067;
+  transition: all 0.3s ease;
+}
+.cardSpace .cardSpace_info:hover {
+  background-color: #cd0067;
+  color: #fff;
+}
+.cardSpace .cardSpace_info:active {
+  filter: brightness(0.6);
+}
+.cardSpace .cardSpace_price {
+  font-size: 1.3rem;
+  color: #fff;
+}/*# sourceMappingURL=itemCard.css.map */
