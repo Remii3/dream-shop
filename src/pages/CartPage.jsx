@@ -7,7 +7,6 @@ import "../styles/scss/pagesStyle/cartPage.scss";
 
 const CartPage = () => {
   const { items } = useContext(ThemeContext);
-
   return (
     <>
       <Nav />
@@ -21,7 +20,22 @@ const CartPage = () => {
           {items.length === 0 && <h3>No items</h3>}
         </div>
         <div className="cartSpace_purchaseSpace">
-          <button className="purchaseSpace_purchaseBtn">Purchase</button>
+          <div className="purchaseSpace_infoSpace">
+            <h1 className="infoSpace_info">
+              <span className="info_text">Tax:</span>
+              <span className="info_amount">0zł</span>
+            </h1>
+            <h1 className="infoSpace_info">
+              <span className="info_text">Grand total:</span>
+              <span className="info_amount">125zł</span>
+            </h1>
+          </div>
+          <button
+            className="purchaseSpace_purchaseBtn"
+            disabled={items.length <= 0 && true}
+          >
+            Purchase
+          </button>
         </div>
       </section>
       <Footer />

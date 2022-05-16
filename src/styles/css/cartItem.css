@@ -1,5 +1,93 @@
 #informationSpace {
   display: flex;
+  flex-direction: column;
+  padding: 1rem 0.5rem;
+  margin: 0 0.5rem;
+  border-top: 2px solid #00ccff;
+}
+#informationSpace .informationSpace_nameSpace {
+  flex-basis: 30%;
+  padding-right: 0;
+}
+@media screen and (min-width: 600px) {
+  #informationSpace .informationSpace_nameSpace {
+    padding-right: 0.5rem;
+  }
+}
+#informationSpace .informationSpace_nameSpace .nameSpace_name {
+  color: #cd0067;
+  cursor: pointer;
+}
+#informationSpace .informationSpace_nameSpace .nameSpace_desc {
+  padding-top: 0.5rem;
+}
+#informationSpace .informationSpace_quantityPriceSpace {
+  display: flex;
   flex-direction: row;
-  padding: 1rem 2rem;
+  padding-top: 1rem;
+  justify-content: space-between;
+  padding-left: 0;
+}
+@media screen and (min-width: 600px) {
+  #informationSpace .informationSpace_quantityPriceSpace {
+    padding-left: 0.5rem;
+    padding-top: 0;
+    flex-shrink: 0;
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+}
+#informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_priceSpace,
+#informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_totalPriceSpace,
+#informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_quantitySpace {
+  text-align: center;
+}
+#informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_priceSpace .priceSpace_amount,
+#informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_priceSpace .quantitySpace_amount,
+#informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_priceSpace .totalPriceSpace_amount,
+#informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_totalPriceSpace .priceSpace_amount,
+#informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_totalPriceSpace .quantitySpace_amount,
+#informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_totalPriceSpace .totalPriceSpace_amount,
+#informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_quantitySpace .priceSpace_amount,
+#informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_quantitySpace .quantitySpace_amount,
+#informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_quantitySpace .totalPriceSpace_amount {
+  padding-top: 1rem;
+}
+#informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_priceSpace .quantitySpace_buttonSpace,
+#informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_totalPriceSpace .quantitySpace_buttonSpace,
+#informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_quantitySpace .quantitySpace_buttonSpace {
+  display: flex;
+  justify-content: space-around;
+}
+#informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_priceSpace .quantitySpace_buttonSpace .buttonSpace_amountChange,
+#informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_totalPriceSpace .quantitySpace_buttonSpace .buttonSpace_amountChange,
+#informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_quantitySpace .quantitySpace_buttonSpace .buttonSpace_amountChange {
+  all: unset;
+  padding: 0.25rem;
+  text-align: center;
+  background-color: #ffcc00;
+  border: 1px solid #ffcc00;
+  width: 21px;
+  font-size: 1.1rem;
+  color: #fff;
+  margin: 0.25rem auto 0;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_priceSpace .quantitySpace_buttonSpace .buttonSpace_amountChange:hover,
+#informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_totalPriceSpace .quantitySpace_buttonSpace .buttonSpace_amountChange:hover,
+#informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_quantitySpace .quantitySpace_buttonSpace .buttonSpace_amountChange:hover {
+  filter: brightness(0.8);
+}
+#informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_priceSpace .quantitySpace_buttonSpace .buttonSpace_amountChange:active,
+#informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_totalPriceSpace .quantitySpace_buttonSpace .buttonSpace_amountChange:active,
+#informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_quantitySpace .quantitySpace_buttonSpace .buttonSpace_amountChange:active {
+  filter: brightness(0.6);
+}
+@media screen and (min-width: 600px) {
+  #informationSpace {
+    padding: 1rem 1rem 1rem 2rem;
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=cartItem.css.map */
