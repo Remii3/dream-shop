@@ -37,7 +37,7 @@ const ContextProvider = (props) => {
 
     let updatedItems;
 
-    if (findItem.amount > 0) {
+    if (findItem.amount > 1) {
       updatedItems = [...cart];
       updatedItems[findItemIndex] = {
         ...updatedItems[findItemIndex],
