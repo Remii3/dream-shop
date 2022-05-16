@@ -1,9 +1,12 @@
+import { useEffect, useState } from "react";
+import { Navigate, Route, Routes } from "react-router-dom";
+
 import WelcomeScreen from "./components/layout/WelcomeScreen";
+import CartPage from "./pages/CartPage";
+import DetailsPage from "./pages/DetailsPage";
 import MainPage from "./pages/MainPage";
 import ProductsPage from "./pages/ProductsPage";
-import { Route, Routes } from "react-router-dom";
-import { useEffect, useState } from "react";
-import CartPage from "./pages/CartPage";
+
 const App = () => {
   const [shopItems, setShopItems] = useState(null);
 
@@ -31,12 +34,13 @@ const App = () => {
             </>
           }
         />
-
         <Route
           path="/products"
           element={<ProductsPage shopItems={shopItems} />}
         />
+        <Route path="/products/:productId" element={<DetailsPage />} />
         <Route path="/cart" element={<CartPage />} />
+        <Route path="/*" element={<Navigate to={"/"} replace />} />
       </Routes>
     </>
   );
