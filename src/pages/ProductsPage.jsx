@@ -12,22 +12,17 @@ const ProductsPage = (props) => {
       <Nav />
       <section id="productsPage">
         <div className="productsPage_filterSpace">
+          <h1>Filter</h1>
           <div className="filterSpace_filter">
             <label className="filter_title" htmlFor="">
-              Price
+              Price:
             </label>
-            <input
-              className="filter_minInput"
-              type="number"
-              placeholder="min"
-            />
-            <input
-              className="filter_maxInput"
-              type="number"
-              placeholder="max"
-            />
+            <input className="filter_input" type="number" placeholder="min" />
+            <input className="filter_input" type="number" placeholder="max" />
           </div>
-          <button className="filterSpace_filterBtn">Filter</button>
+          <div className="filterSpace_filterBtnSpace">
+            <button className="filterBtnSpace_filterBtn">Filter</button>
+          </div>
         </div>
         <div className="productsPage_products">
           {shopItems && shopItems.map((item) => <ItemCard itemData={item} />)}

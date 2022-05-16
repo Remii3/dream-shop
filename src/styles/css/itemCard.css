@@ -1,14 +1,34 @@
 .cardSpace {
+  background-image: url("../../../assets/dream.jpg");
   padding: 1rem;
-  background-color: #00ccff;
   border-radius: 0.7rem;
   min-width: 270px;
+  position: relative;
   text-align: left;
   box-shadow: -0.1rem 0.1rem 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+.cardSpace .cardSpace_bgShadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: all 0.3s ease;
 }
 .cardSpace .cardSpace_name {
+  display: inline-block;
   font-size: 1.9rem;
   color: #fff;
+  text-shadow: -0.1rem 0.1rem 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+  position: relative;
+  top: 140px;
+}
+.cardSpace .cardSpace_name:hover {
+  color: #cd0067;
 }
 .cardSpace .cardSpace_desc {
   margin-top: 2.5rem;
@@ -17,12 +37,22 @@
   max-height: 40px;
   white-space: nowrap;
   font-size: 1.1rem;
+  color: #fff;
+  transition: all 0.3s ease;
+  position: relative;
+  top: 140px;
 }
 .cardSpace .cardSpace_buySpace {
   margin-top: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+  top: 140px;
+  border-radius: 0.7rem;
+  padding: 0.5rem;
 }
 .cardSpace .cardSpace_addToCartBtn {
   all: unset;
@@ -34,6 +64,7 @@
   cursor: pointer;
   background-color: #ffcc00;
   transition: all 0.3s ease;
+  box-shadow: -0.1rem 0.1rem 5px rgba(0, 0, 0, 0.5);
 }
 .cardSpace .cardSpace_addToCartBtn:hover {
   filter: brightness(0.8);
@@ -50,6 +81,7 @@
   color: #cd0067;
   border: 2px solid #cd0067;
   transition: all 0.3s ease;
+  box-shadow: -0.1rem 0.1rem 5px rgba(0, 0, 0, 0.5);
 }
 .cardSpace .cardSpace_info:hover {
   background-color: #cd0067;
@@ -61,4 +93,17 @@
 .cardSpace .cardSpace_price {
   font-size: 1.3rem;
   color: #fff;
+  text-shadow: -0.1rem 0.1rem 5px rgba(0, 0, 0, 0.5);
+}
+.cardSpace:hover .cardSpace_bgShadow {
+  opacity: 1;
+}
+.cardSpace:hover .cardSpace_buySpace {
+  top: 0;
+}
+.cardSpace:hover .cardSpace_name {
+  top: 0;
+}
+.cardSpace:hover .cardSpace_desc {
+  top: 0;
 }/*# sourceMappingURL=itemCard.css.map */

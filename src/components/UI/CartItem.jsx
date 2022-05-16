@@ -31,7 +31,6 @@ const CartItem = ({ itemData }) => {
         </div>
         <div className="quantityPriceSpace_quantitySpace">
           <h3 className="quantitySpace_title">Quantity:</h3>
-          <p className="quantitySpace_amount">{amount}</p>
           <div className="quantitySpace_buttonSpace">
             <button
               className="buttonSpace_amountChange"
@@ -39,6 +38,7 @@ const CartItem = ({ itemData }) => {
             >
               -
             </button>
+            <p className="quantitySpace_amount">{amount}</p>
             <button
               className="buttonSpace_amountChange"
               onClick={addToCartHandler}

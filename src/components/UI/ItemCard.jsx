@@ -14,15 +14,16 @@ const ItemCard = (props) => {
 
   return (
     <div className="cardSpace">
-      <h2 className="cardSpace_name">{name}</h2>
-      <p className="cardSpace_desc">{description}</p>
+      <Link to={`/products/${id}`}>
+        <div className="cardSpace_bgShadow" />
+        <h2 className="cardSpace_name">{name}</h2>
+        <p className="cardSpace_desc">{description}</p>
+      </Link>
       <div className="cardSpace_buySpace">
         <button className="cardSpace_addToCartBtn" onClick={addToCartHandler}>
           Add to cart
         </button>
-        <Link to={`/products/${id}`} className="cardSpace_info">
-          <p>i</p>
-        </Link>
+
         <p className="cardSpace_price">{price}zł</p>
       </div>
     </div>

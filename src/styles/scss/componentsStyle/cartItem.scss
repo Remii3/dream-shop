@@ -46,15 +46,15 @@
       text-align: center;
 
       .priceSpace_amount,
-      .quantitySpace_amount,
       .totalPriceSpace_amount {
         padding-top: 1rem;
       }
 
       .quantitySpace_buttonSpace {
         display: flex;
-        justify-content: space-around;
-
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 0.5rem;
         .buttonSpace_amountChange {
           all: unset;
           padding: 0.25rem;
@@ -64,7 +64,7 @@
           width: 21px;
           font-size: 1.1rem;
           color: #fff;
-          margin: 0.25rem auto 0;
+          margin: 0.25rem 0.5rem 0;
           border-radius: 50%;
           cursor: pointer;
           transition: all 0.3s ease;

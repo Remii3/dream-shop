@@ -43,13 +43,10 @@
   text-align: center;
 }
 #informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_priceSpace .priceSpace_amount,
-#informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_priceSpace .quantitySpace_amount,
 #informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_priceSpace .totalPriceSpace_amount,
 #informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_totalPriceSpace .priceSpace_amount,
-#informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_totalPriceSpace .quantitySpace_amount,
 #informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_totalPriceSpace .totalPriceSpace_amount,
 #informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_quantitySpace .priceSpace_amount,
-#informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_quantitySpace .quantitySpace_amount,
 #informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_quantitySpace .totalPriceSpace_amount {
   padding-top: 1rem;
 }
@@ -57,7 +54,9 @@
 #informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_totalPriceSpace .quantitySpace_buttonSpace,
 #informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_quantitySpace .quantitySpace_buttonSpace {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.5rem;
 }
 #informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_priceSpace .quantitySpace_buttonSpace .buttonSpace_amountChange,
 #informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_totalPriceSpace .quantitySpace_buttonSpace .buttonSpace_amountChange,
@@ -70,7 +69,7 @@
   width: 21px;
   font-size: 1.1rem;
   color: #fff;
-  margin: 0.25rem auto 0;
+  margin: 0.25rem 0.5rem 0;
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.3s ease;
