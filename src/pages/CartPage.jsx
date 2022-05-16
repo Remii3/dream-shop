@@ -6,7 +6,7 @@ import { ThemeContext } from "../context/ContextProvider";
 import "../styles/scss/pagesStyle/cartPage.scss";
 
 const CartPage = () => {
-  const { items } = useContext(ThemeContext);
+  const { items, totalPrice } = useContext(ThemeContext);
   return (
     <>
       <Nav />
@@ -27,7 +27,7 @@ const CartPage = () => {
             </h1>
             <h1 className="infoSpace_info">
               <span className="info_text">Grand total:</span>
-              <span className="info_amount">125zł</span>
+              <span className="info_amount">{totalPrice.toFixed(2)}zł</span>
             </h1>
           </div>
           <button
