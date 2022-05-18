@@ -11,6 +11,7 @@
     width: 100%;
 
     .nameSpace_name {
+      font-size: 1.6rem;
       display: inline-block;
       color: $secondaryColor;
       cursor: pointer;
@@ -20,6 +21,7 @@
       padding-top: 0.5rem;
       text-overflow: ellipsis;
       white-space: nowrap;
+      font-size: $smallFont;
       overflow: hidden;
     }
 
@@ -30,12 +32,13 @@
 
   .informationSpace_quantityPriceSpace {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding-top: 1rem;
     padding-left: 0;
     justify-content: space-evenly;
 
     @media screen and (min-width: 800px) {
+      flex-direction: row;
       justify-content: space-between;
       padding-left: 0.5rem;
       padding-top: 0;
@@ -48,16 +51,37 @@
     .quantityPriceSpace_quantitySpace {
       flex-basis: calc(100% / 3);
       text-align: center;
+      font-size: $smallFont;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 0.5rem;
+
+      @media screen and(min-width:800px) {
+        margin-top: 0;
+        flex-direction: column;
+      }
+
       .priceSpace_amount,
       .totalPriceSpace_amount {
-        padding-top: 1rem;
+        padding-top: 0;
+
+        @media screen and (min-width: 800px) {
+          padding-top: 1rem;
+        }
       }
 
       .quantitySpace_buttonSpace {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 0.5rem;
+        padding-top: 0;
+
+        @media screen and (min-width: 800px) {
+          padding-top: 0.5rem;
+        }
+
         .buttonSpace_amountChangeBtn {
           all: unset;
           padding: 0.25rem;
@@ -67,7 +91,7 @@
           width: 21px;
           font-size: $tinyFont;
           color: $whiteColor;
-          margin: 0.25rem 0.5rem 0;
+          margin: 0.25rem 0 0;
           border-radius: 50%;
           cursor: pointer;
           transition: $basicTransition;
@@ -78,6 +102,12 @@
           &:active {
             filter: brightness(0.6);
           }
+        }
+        .buttonSpace_amountChangeBtn:nth-child(1) {
+          margin-right: 0.5rem;
+        }
+        .buttonSpace_amountChangeBtn:nth-child(3) {
+          margin-left: 0.5rem;
         }
       }
     }
