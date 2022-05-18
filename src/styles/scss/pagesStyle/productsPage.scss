@@ -83,6 +83,12 @@
       grid-template-columns: repeat(auto-fit, 270px);
       grid-template-rows: repeat(auto-fit, 210px);
       justify-content: center;
+
+      .productsSpace_noItems {
+        position: relative;
+        text-align: center;
+        top: 30%;
+      }
     }
   }
 }

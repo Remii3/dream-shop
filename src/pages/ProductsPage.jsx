@@ -76,7 +76,7 @@ const ProductsPage = (props) => {
                 <ItemCard key={index} itemData={item} />
               ))}
             {filteredShopItems.length === 0 && (
-              <h1 className="itemSpace_noItems">No items</h1>
+              <h1 className="productsSpace_noItems">No items</h1>
             )}
           </div>
         </div>

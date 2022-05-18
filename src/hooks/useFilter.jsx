@@ -8,7 +8,6 @@ const useFilter = () => {
     const { searchText, minPrice, maxPrice } = filterParameters;
     let updatedFilterTypes = [];
     let updatedFilterData = {};
-    console.log(searchText, minPrice, maxPrice);
 
     if (searchText !== "") updatedFilterTypes.push("search");
 
