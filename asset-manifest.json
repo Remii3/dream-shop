@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/dream-shop/static/css/main.fe874403.css",
-    "main.js": "/dream-shop/static/js/main.f79b0e55.js",
+    "main.css": "/dream-shop/static/css/main.1e7c9876.css",
+    "main.js": "/dream-shop/static/js/main.ce842376.js",
     "static/media/dream.jpg": "/dream-shop/static/media/dream.b2f14b8ac58714e09d0d.jpg",
     "index.html": "/dream-shop/index.html",
-    "main.fe874403.css.map": "/dream-shop/static/css/main.fe874403.css.map",
-    "main.f79b0e55.js.map": "/dream-shop/static/js/main.f79b0e55.js.map"
+    "main.1e7c9876.css.map": "/dream-shop/static/css/main.1e7c9876.css.map",
+    "main.ce842376.js.map": "/dream-shop/static/js/main.ce842376.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe874403.css",
-    "static/js/main.f79b0e55.js"
+    "static/css/main.1e7c9876.css",
+    "static/js/main.ce842376.js"
   ]
 }
