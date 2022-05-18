@@ -60,7 +60,7 @@
     .infoContainer_detailsSpace {
       display: flex;
       justify-content: space-between;
-
+      padding-top: 0.5rem;
       .detailsSpace_details {
         font-size: $smallFont;
         padding: 0.125rem 0;
@@ -70,7 +70,7 @@
     .infoContainer_buyBtnSpace {
       display: flex;
       flex-direction: column;
-      padding-top: 2.5rem;
+      padding-top: 2rem;
       align-items: flex-end;
 
       .buyBtnSpace_addBtn {
@@ -79,7 +79,7 @@
         padding: 0.9rem 1.9rem;
         border-radius: 0.75rem;
         font-size: $mediumFont;
-        margin-top: 2rem;
+        margin-top: 0.5rem;
         color: $decorativeColor;
         cursor: pointer;
         background-color: $whiteColor;

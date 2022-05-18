@@ -18,9 +18,9 @@ const MainPage = (props) => {
     <>
       <Nav />
       <section id="mainPage">
-        {sortTypesAndTitles.map((arrayItem) => {
+        {sortTypesAndTitles.map((arrayItem, index) => {
           return (
-            <div className="mainPage_productsSpace">
+            <div key={index} className="mainPage_productsSpace">
               <h1 className="productsSpace_title">
                 {arrayItem.title.toUpperCase()}
               </h1>

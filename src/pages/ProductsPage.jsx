@@ -22,6 +22,8 @@ const ProductsPage = (props) => {
       maxPrice: maxPrice.current.value || null,
     });
   };
+  if (!shopItems) return;
+  const filteredShopItems = filterItems(shopItems, filterData);
 
   return (
     <>
@@ -69,10 +71,13 @@ const ProductsPage = (props) => {
             </div>
           </div>
           <div className="productsPage_productsSpace">
-            {shopItems &&
-              filterItems(shopItems, filterData).map((item, index) => (
+            {filteredShopItems &&
+              filteredShopItems.map((item, index) => (
                 <ItemCard key={index} itemData={item} />
               ))}
+            {filteredShopItems.length === 0 && (
+              <h1 className="itemSpace_noItems">No items</h1>
+            )}
           </div>
         </div>
       </section>
