@@ -22,22 +22,27 @@ const WelcomeScreen = () => {
       </ul>
       <div className="shadowOverlay" />
       <div className="welcomeScreen_titleSpace">
-        <h1 className="titleSpace_title">
-          W<span className="title_coloredLetter">el</span>co
+        <h1 className="titleSpace_title ">
+          <span className="title_coloredLetter">W</span>el
+          <span className="title_coloredLetter">c</span>o
           <span className="title_coloredLetter">m</span>e
         </h1>
-        <h1 className="titleSpace_title">
-          <span className="title_coloredLetter">T</span>o
+        <h1 className="titleSpace_title ">
+          <span className="title_coloredLetter">t</span>o
         </h1>
         <h1 className="titleSpace_title">
-          <span>G</span>oo<span>Dre</span>am<span>S</span>hop
+          <span className="title_coloredLetter">G</span>oo
+          <span className="title_coloredLetter">D</span>ream
+          <span className="title_coloredLetter">S</span>hop
         </h1>
-        <button
-          className="titleSpace_seeMoreBtn"
-          onClick={seeMoreBtnClickHandler}
-        >
-          See more
-        </button>
+        <div className="titleSpace_seeMoreBtnSpace">
+          <button
+            className="seeMoreBtnSpace_seeMoreBtn"
+            onClick={seeMoreBtnClickHandler}
+          >
+            See more
+          </button>
+        </div>
       </div>
     </section>
   );

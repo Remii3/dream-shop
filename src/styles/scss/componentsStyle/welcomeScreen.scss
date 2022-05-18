@@ -128,7 +128,6 @@
     left: 50%;
     transform: translate(-50%, -40%);
     padding: 0 1rem;
-    text-align: center;
 
     .titleSpace_title {
       color: $whiteColor;
@@ -136,13 +135,10 @@
       font-size: 2.1rem;
       text-align: left;
 
-      span {
-        color: $secondaryColor;
-      }
-
       .title_coloredLetter {
         color: $secondaryColor;
       }
+
       @media screen and (min-width: 300px) {
         font-size: 2.3rem;
       }
@@ -158,24 +154,34 @@
         font-size: 4rem;
       }
     }
+    .titleSpace_title:nth-child(1) {
+      display: inline-block;
+    }
+    .titleSpace_title:nth-child(2) {
+      display: inline-block;
+      padding-left: 1rem;
+    }
 
-    .titleSpace_seeMoreBtn {
-      all: unset;
-      border: 2px solid $whiteColor;
-      background-color: rgba(0, 0, 0, 0.5);
-      border-radius: $basicBorderRadius;
-      font-size: $bigFont;
-      padding: 0.5rem 1.5rem;
-      margin: 2.5rem 0rem 0;
-      cursor: pointer;
-      color: $whiteColor;
-      transition: $basicTransition;
-      box-shadow: $basicShadow;
+    .titleSpace_seeMoreBtnSpace {
+      text-align: center;
+      .seeMoreBtnSpace_seeMoreBtn {
+        all: unset;
+        border: 2px solid $whiteColor;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: $basicBorderRadius;
+        font-size: $bigFont;
+        padding: 0.5rem 1.5rem;
+        margin: 2.5rem 0 0;
+        cursor: pointer;
+        color: $whiteColor;
+        transition: $basicTransition;
+        box-shadow: $basicShadow;
 
-      &:hover,
-      &:focus {
-        border-color: $decorativeColor;
-        background-color: $decorativeColor;
+        &:hover,
+        &:focus {
+          border-color: $decorativeColor;
+          background-color: $decorativeColor;
+        }
       }
     }
   }
