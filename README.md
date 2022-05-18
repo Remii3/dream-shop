@@ -1,4 +1,11 @@
-## frameworks
+## How to start
+
+    - npm i -> to install required dependencies
+    - npm start -> to start localhost
+
+    - (https://remii3.github.io/dream-shop/) link to github pages
+
+## dependencies
 
     - sass -> documentation can be found here: https://sass-lang.com/documentation
     - react-router -> documentation can be found here: https://reactrouter.com/docs/en/v6
