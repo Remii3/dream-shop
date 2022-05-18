@@ -1,9 +1,13 @@
+## Hosted page
+
+    - [(https://remii3.github.io/dream-shop/)] 
+
 ## How to start
 
     - npm i -> to install required dependencies
     - npm start -> to start localhost
 
-[(https://remii3.github.io/dream-shop/)] link to github pages
+
 
 ## dependencies
 
