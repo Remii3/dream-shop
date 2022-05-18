@@ -5,25 +5,26 @@ const useFilter = () => {
   const [filterData, setFilterData] = useState({});
 
   const changeFilterValuesHandler = (filterParameters) => {
-    const { minPrice, maxPrice } = filterParameters;
-    let updatedFilterTypes = [...filterTypes];
-    let updatedFilterData = { ...filterData };
-    if (minPrice || maxPrice)
-      if (
-        toString(minPrice).trim() !== "" ||
-        toString(maxPrice).trim() !== ""
-      ) {
-        if (!updatedFilterTypes.includes("price"))
-          updatedFilterTypes.push("price");
+    const { searchText, minPrice, maxPrice } = filterParameters;
+    let updatedFilterTypes = [];
+    let updatedFilterData = {};
+    console.log(searchText, minPrice, maxPrice);
 
-        updatedFilterData = {
-          ...filterData,
-          price: {
-            min: minPrice || 0,
-            max: maxPrice || null,
-          },
-        };
-      }
+    if (searchText !== "") updatedFilterTypes.push("search");
+
+    if (minPrice !== 0 || maxPrice !== null) {
+      updatedFilterTypes.push("price");
+    }
+
+    updatedFilterData = {
+      ...filterData,
+      search: searchText || "",
+      price: {
+        min: minPrice || 0,
+        max: maxPrice || null,
+      },
+    };
+
     setFilterTypes(updatedFilterTypes);
     setFilterData(updatedFilterData);
   };

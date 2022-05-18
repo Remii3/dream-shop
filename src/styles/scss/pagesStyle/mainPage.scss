@@ -1,24 +1,30 @@
-#mainPage {
-  min-height: 100vh;
-  padding: 57px 1rem;
+@import "../_variable";
 
-  .mainPage_newSpace,
-  .mainPage_popularSpace,
-  .mainPage_mostLikedSpace {
+#mainPage {
+  min-height: $pageContent_minHeight;
+  padding: $pageContent_padding;
+  max-width: $pageContent_maxWidth;
+  margin: 0 auto;
+
+  .mainPage_productsSpace {
     text-align: center;
-    margin: 0 auto;
-    max-width: 1200px;
     padding: 2rem 0;
-    .newSpace_title {
-      font-size: 2.8rem;
+
+    .productsSpace_title {
+      font-size: $titleFont;
     }
-    .newSpace_cardsSpace {
+
+    .productsSpace_cardsSpace {
       display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
       justify-content: center;
       align-items: center;
-      padding-top: 2rem;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 2rem 0;
+
+      @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+      }
     }
   }
 }

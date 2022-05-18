@@ -1,5 +1,33 @@
+// colors
 $mainColor: #00ccff;
 $secondaryColor: #cd0067;
 $decorativeColor: #ffcc00;
+$whiteColor: #fff;
 
-$mainColor_lighter: rgba(0, 204, 255, 0.9);
+// pageContent main container style
+
+$pageContent_minHeight: calc(100vh - (59px + 63px));
+
+$pageContent_padding: 1rem;
+$pageContent_maxWidth: 1200px;
+
+// fonts
+
+$titleFont: 2.8rem;
+$bigFont: 1.9rem;
+$mediumFont: 1.4rem;
+$smallFont: 1.2rem;
+$tinyFont: 1.1rem;
+
+//transition
+
+$basicTransition: all 0.3s ease;
+
+//radius
+
+$basicBorderRadius: 0.75rem;
+
+// shadow
+
+$basicShadow: -0.1rem 0.1rem 5px rgba(0, 0, 0, 0.5);
+$lightShadow: -0.1rem 0.1rem 5px rgba(0, 0, 0, 0.3);

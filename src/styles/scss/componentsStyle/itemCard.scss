@@ -3,14 +3,29 @@
 .cardSpace {
   background-image: url("../../../assets/dream.jpg");
   padding: 1rem;
-  border-radius: 0.7rem;
-  min-width: 270px;
+  border-radius: $basicBorderRadius;
+  width: 270px;
   position: relative;
-
   text-align: left;
-  box-shadow: -0.1rem 0.1rem 5px rgba(0, 0, 0, 0.3);
+  box-shadow: $basicShadow;
   overflow: hidden;
-  .cardSpace_bgShadow {
+
+  &:hover {
+    .cardSpace_overlay {
+      opacity: 1;
+    }
+    .cardSpace_buyBtnSpace {
+      top: 0;
+    }
+    .cardSpace_name {
+      top: 0;
+    }
+    .cardSpace_desc {
+      top: 0;
+    }
+  }
+
+  .cardSpace_overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -18,57 +33,60 @@
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
-    transition: all 0.3s ease;
+    transition: $basicTransition;
   }
+
   .cardSpace_name {
     display: inline-block;
-    font-size: 1.9rem;
-    color: #fff;
-    text-shadow: -0.1rem 0.1rem 5px rgba(0, 0, 0, 0.5);
-    transition: all 0.3s ease;
+    font-size: $bigFont;
+    color: $whiteColor;
+    text-shadow: $basicShadow;
+    transition: $basicTransition;
     position: relative;
     top: 140px;
+
     &:hover {
       color: $secondaryColor;
     }
   }
+
   .cardSpace_desc {
     margin-top: 2.5rem;
     overflow: hidden;
     text-overflow: ellipsis;
     max-height: 40px;
     white-space: nowrap;
-    font-size: 1.1rem;
-    color: #fff;
-    transition: all 0.3s ease;
+    font-size: $tinyFont;
+    color: $whiteColor;
+    transition: $basicTransition;
     position: relative;
     top: 140px;
   }
-  .cardSpace_buySpace {
+
+  .cardSpace_buyBtnSpace {
     margin-top: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease;
+    transition: $basicTransition;
     position: relative;
     top: 140px;
-
     border-radius: 0.7rem;
     padding: 0.5rem;
   }
 
-  .cardSpace_addToCartBtn {
+  .buyBtnSpace_addToCartBtn {
     all: unset;
     border: 2px solid $decorativeColor;
     padding: 0.5rem 1rem;
-    border-radius: 0.75rem;
-    font-size: 1.1rem;
-    color: #fff;
+    border-radius: $basicBorderRadius;
+    font-size: $tinyFont;
+    color: $whiteColor;
     cursor: pointer;
     background-color: $decorativeColor;
-    transition: all 0.3s ease;
-    box-shadow: -0.1rem 0.1rem 5px rgba(0, 0, 0, 0.5);
+    transition: $basicTransition;
+    box-shadow: $basicShadow;
 
     &:hover {
       filter: brightness(0.8);
@@ -78,43 +96,9 @@
     }
   }
 
-  .cardSpace_info {
-    text-decoration: none;
-    background-color: #fff;
-    padding: 0.1rem 0.5rem;
-    border-radius: 0.2rem;
-    font-size: 1.1rem;
-    color: $secondaryColor;
-    border: 2px solid $secondaryColor;
-    transition: all 0.3s ease;
-    box-shadow: -0.1rem 0.1rem 5px rgba(0, 0, 0, 0.5);
-
-    &:hover {
-      background-color: $secondaryColor;
-      color: #fff;
-    }
-    &:active {
-      filter: brightness(0.6);
-    }
-  }
-  .cardSpace_price {
-    font-size: 1.3rem;
-    color: #fff;
-    text-shadow: -0.1rem 0.1rem 5px rgba(0, 0, 0, 0.5);
-  }
-
-  &:hover {
-    .cardSpace_bgShadow {
-      opacity: 1;
-    }
-    .cardSpace_buySpace {
-      top: 0;
-    }
-    .cardSpace_name {
-      top: 0;
-    }
-    .cardSpace_desc {
-      top: 0;
-    }
+  .buyBtnSpace_price {
+    font-size: $mediumFont;
+    color: $whiteColor;
+    text-shadow: $basicShadow;
   }
 }

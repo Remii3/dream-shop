@@ -1,0 +1,101 @@
+.test {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  font-size: 1.2rem;
+}
+.test a {
+  color: #cd0067;
+}
+
+#detailsPage {
+  min-height: calc(100vh - 175px);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  flex-direction: column;
+}
+#detailsPage .detailsPage_photoContainer {
+  flex-basis: 60%;
+  background-image: url("../../../assets/dream.jpg");
+  width: 100%;
+  min-height: 400px;
+  background-position: center;
+  max-height: 800px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media screen and (min-width: 600px) {
+  #detailsPage .detailsPage_photoContainer {
+    background-position: top;
+  }
+}
+#detailsPage .detailsPage_infoContainer {
+  padding: 1rem 0.5rem;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  border-left: none;
+}
+@media screen and (min-width: 600px) {
+  #detailsPage .detailsPage_infoContainer {
+    padding: 1rem 0.5rem 1rem 1rem;
+    border-left: 2px solid #00ccff;
+    width: 40%;
+  }
+}
+#detailsPage .detailsPage_infoContainer .infoContainer_name {
+  padding: 0.25rem 0;
+  font-size: 2rem;
+}
+#detailsPage .detailsPage_infoContainer .infoContainer_desc {
+  font-size: 1.3rem;
+  padding: 0.5rem 0;
+}
+#detailsPage .detailsPage_infoContainer .infoContainer_detailsSpace {
+  display: flex;
+  justify-content: space-between;
+}
+#detailsPage .detailsPage_infoContainer .infoContainer_detailsSpace span {
+  font-size: 1.2rem;
+  padding: 0.125rem 0;
+}
+#detailsPage .detailsPage_infoContainer .infoContainer_buyBtnSpace {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2.5rem;
+  align-items: flex-end;
+}
+#detailsPage .detailsPage_infoContainer .infoContainer_buyBtnSpace button {
+  all: unset;
+  border: 2px solid #ffcc00;
+  padding: 0.9rem 1.9rem;
+  border-radius: 0.75rem;
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+  color: #ffcc00;
+  cursor: pointer;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  box-shadow: -0.1rem 0.1rem 5px rgba(0, 0, 0, 0.5);
+}
+#detailsPage .detailsPage_infoContainer .infoContainer_buyBtnSpace button:hover {
+  background-color: #ffcc00;
+  color: #fff;
+}
+#detailsPage .detailsPage_infoContainer .infoContainer_buyBtnSpace button:active {
+  filter: brightness(0.6);
+}
+#detailsPage .detailsPage_infoContainer .infoContainer_buyBtnSpace p {
+  font-size: 1.3rem;
+}
+@media screen and (min-width: 600px) {
+  #detailsPage {
+    min-height: calc(100vh - 120px);
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=detailsPage.css.map */

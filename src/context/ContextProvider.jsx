@@ -4,8 +4,8 @@ export const ThemeContext = createContext({
   items: [],
   totalAmount: 0,
   totalPrice: 0,
-  addItem: () => {},
-  removeItem: () => {},
+  addItem: ({ id, name, description, price, amount }) => {},
+  removeItem: (id) => {},
 });
 
 const ContextProvider = (props) => {

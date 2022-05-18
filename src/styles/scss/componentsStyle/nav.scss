@@ -7,120 +7,110 @@
   top: 0;
   left: 0;
   z-index: 50;
-}
 
-.navigationSpace_innerSection {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-
-  background-color: $mainColor;
-  padding: 1rem;
-  max-width: 1200px;
-  margin: 0 auto;
-
-  @media screen and(min-width:600px) {
-    align-items: center;
-    flex-direction: row-reverse;
-    padding: 0 2rem;
-  }
-
-  .innerSection_iconSpace {
-    width: 100%;
+  .navigationSpace_innerSection {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    background-color: $mainColor;
+    padding: 1rem 1.5rem;
+    min-height: 59px;
+    margin: 0 auto;
+    max-width: $pageContent_maxWidth;
 
-    @media screen and (min-width: 600px) {
-      width: auto;
-      justify-content: flex-end;
-    }
-  }
-
-  .navigation_burger {
-    display: block;
-    margin: 0;
-    padding: 0;
-
-    .burger_stripe,
-    .burger_stripe::after,
-    .burger_stripe::before {
-      background-color: #fff;
-      box-shadow: -0.1rem 0.1rem 5px rgba(0, 0, 0, 0.3);
+    @media screen and(min-width: 600px) {
+      flex-direction: row-reverse;
     }
 
-    @media screen and (min-width: 600px) {
-      display: none;
-    }
-  }
-
-  .navigation_pages {
-    max-height: 0;
-    width: 100%;
-    overflow: hidden;
-
-    .pages_link {
-      display: block;
-      color: #fff;
-      font-size: 1.3rem;
-      width: 100%;
-      max-width: 200px;
-      margin: 0 auto;
-      text-align: center;
-      padding: 1rem 0.5rem;
-
-      cursor: pointer;
-      transition: all 0.3s ease;
-
-      &:hover,
-      &:focus {
-        color: $secondaryColor;
-      }
+    .innerSection_iconSpace {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
       @media screen and (min-width: 600px) {
-        display: inline-block;
-        margin: 0 1.5rem 0 0;
-        width: auto;
+        justify-content: flex-end;
+      }
+
+      .iconSpace_burger {
+        display: block;
+        margin: 0;
+        padding: 0;
+
+        .burger_stripe,
+        .burger_stripe::after,
+        .burger_stripe::before {
+          background-color: $whiteColor;
+          box-shadow: $basicShadow;
+        }
+
+        @media screen and (min-width: 600px) {
+          display: none;
+        }
+      }
+
+      .iconSpace_cart {
+        font-size: $mediumFont;
+        color: $whiteColor;
+        cursor: pointer;
+        transition: $basicTransition;
+        position: relative;
+
+        .cartItemsQuantity {
+          color: $whiteColor;
+          font-size: 12px;
+          position: absolute;
+          top: -15px;
+          right: -50%;
+          height: 25px;
+          width: 25px;
+          overflow: hidden;
+          border-radius: 50%;
+          background-color: $decorativeColor;
+          line-height: 25px;
+          text-align: center;
+        }
+
+        &:hover,
+        &:active {
+          color: $secondaryColor;
+        }
       }
     }
 
-    @media screen and (min-width: 600px) {
-      max-height: 100%;
-    }
-  }
+    .navigation_pages {
+      max-height: 0;
+      width: 100%;
+      overflow: hidden;
 
-  .navigation_pages-active {
-    max-height: 100%;
-  }
+      @media screen and (min-width: 600px) {
+        max-height: 100%;
+      }
 
-  .navigation_cart {
-    text-align: right;
-    i {
-      font-size: 1.3rem;
-      color: #fff;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      position: relative;
-      .cartItemsQuantity {
-        font-size: 12px;
-        position: absolute;
-        top: -15px;
-        right: -50%;
-        height: 25px;
-        width: 25px;
-        overflow: hidden;
-        border-radius: 50%;
-        background-color: $decorativeColor;
-        color: #fff;
-        line-height: 25px;
+      .pages_link {
+        display: block;
+        color: $whiteColor;
+        font-size: $mediumFont;
+        max-width: 200px;
+        margin: 1.5rem auto calc(1.5rem - 16px);
         text-align: center;
-      }
+        padding-right: 0;
+        cursor: pointer;
+        transition: $basicTransition;
 
-      &:hover,
-      &:focus {
-        color: $secondaryColor;
+        &:hover,
+        &:active {
+          color: $secondaryColor;
+        }
+
+        @media screen and (min-width: 600px) {
+          display: inline-block;
+          margin: 0 1.5rem 0 0;
+          padding-right: 0.5rem;
+        }
       }
+    }
+
+    .navigation_pages-active {
+      max-height: 100%;
     }
   }
 }

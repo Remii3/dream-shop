@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { ThemeContext } from "../../context/ContextProvider";
+
 import "../../styles/scss/componentsStyle/cartItem.scss";
 
 const CartItem = ({ itemData }) => {
@@ -10,6 +11,7 @@ const CartItem = ({ itemData }) => {
   const addToCartHandler = () => {
     cart.addItem({ id, name, description, price, amount: 1 });
   };
+
   const removeFromCartHandler = () => {
     cart.removeItem(id);
   };
@@ -33,14 +35,14 @@ const CartItem = ({ itemData }) => {
           <h3 className="quantitySpace_title">Quantity:</h3>
           <div className="quantitySpace_buttonSpace">
             <button
-              className="buttonSpace_amountChange"
+              className="buttonSpace_amountChangeBtn"
               onClick={removeFromCartHandler}
             >
               -
             </button>
-            <p className="quantitySpace_amount">{amount}</p>
+            <p className="buttonSpace_amount">{amount}</p>
             <button
-              className="buttonSpace_amountChange"
+              className="buttonSpace_amountChangeBtn"
               onClick={addToCartHandler}
             >
               +

@@ -15,6 +15,11 @@
   max-height: 590px;
   overflow-y: scroll;
 }
+#cartSpace .cartSpace_itemSpace .itemSpace_noItems {
+  position: relative;
+  text-align: center;
+  top: 30%;
+}
 #cartSpace .cartSpace_purchaseSpace {
   flex-basis: 25%;
   padding: 0 0.5rem;

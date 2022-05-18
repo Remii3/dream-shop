@@ -905,6 +905,9 @@
   width: 100%;
   overflow: hidden;
 }
+.navigationSpace_innerSection .navigation_pages .pages_test {
+  text-align: center;
+}
 .navigationSpace_innerSection .navigation_pages .pages_link {
   display: block;
   color: #fff;

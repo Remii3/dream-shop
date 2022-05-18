@@ -1,4 +1,3 @@
-import React from "react";
 import "../../styles/scss/componentsStyle/welcomeScreen.scss";
 
 const WelcomeScreen = () => {
@@ -10,16 +9,16 @@ const WelcomeScreen = () => {
   return (
     <section id="welcomeScreen">
       <ul className="welcomeScreen_animationSpace">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li className="animationSpace_square"></li>
+        <li className="animationSpace_square"></li>
+        <li className="animationSpace_square"></li>
+        <li className="animationSpace_square"></li>
+        <li className="animationSpace_square"></li>
+        <li className="animationSpace_square"></li>
+        <li className="animationSpace_square"></li>
+        <li className="animationSpace_square"></li>
+        <li className="animationSpace_square"></li>
+        <li className="animationSpace_square"></li>
       </ul>
       <div className="shadowOverlay" />
       <div className="welcomeScreen_titleSpace">
@@ -31,8 +30,7 @@ const WelcomeScreen = () => {
           <span className="title_coloredLetter">T</span>o
         </h1>
         <h1 className="titleSpace_title">
-          G<span className="title_coloredLetter">oo</span>Dream
-          <span className="title_coloredLetter">Sh</span>op
+          <span>G</span>oo<span>Dre</span>am<span>S</span>hop
         </h1>
         <button
           className="titleSpace_seeMoreBtn"

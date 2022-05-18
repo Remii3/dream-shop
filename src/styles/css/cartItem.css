@@ -7,12 +7,6 @@
 }
 #informationSpace .informationSpace_nameSpace {
   flex-basis: 30%;
-  padding-right: 0;
-}
-@media screen and (min-width: 600px) {
-  #informationSpace .informationSpace_nameSpace {
-    padding-right: 0.5rem;
-  }
 }
 #informationSpace .informationSpace_nameSpace .nameSpace_name {
   color: #cd0067;
@@ -20,21 +14,25 @@
 }
 #informationSpace .informationSpace_nameSpace .nameSpace_desc {
   padding-top: 0.5rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 80%;
+  overflow: hidden;
 }
 #informationSpace .informationSpace_quantityPriceSpace {
   display: flex;
   flex-direction: row;
   padding-top: 1rem;
-  justify-content: space-between;
   padding-left: 0;
+  justify-content: space-evenly;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   #informationSpace .informationSpace_quantityPriceSpace {
+    justify-content: space-between;
     padding-left: 0.5rem;
     padding-top: 0;
     flex-shrink: 0;
     flex-grow: 1;
-    justify-content: space-between;
   }
 }
 #informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_priceSpace,
@@ -54,7 +52,7 @@
 #informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_totalPriceSpace .quantitySpace_buttonSpace,
 #informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_quantitySpace .quantitySpace_buttonSpace {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding-top: 0.5rem;
 }
@@ -84,9 +82,9 @@
 #informationSpace .informationSpace_quantityPriceSpace .quantityPriceSpace_quantitySpace .quantitySpace_buttonSpace .buttonSpace_amountChange:active {
   filter: brightness(0.6);
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   #informationSpace {
-    padding: 1rem 1rem 1rem 2rem;
+    padding: 1rem 0.5rem;
     flex-direction: row;
   }
 }/*# sourceMappingURL=cartItem.css.map */

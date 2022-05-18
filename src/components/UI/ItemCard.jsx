@@ -1,10 +1,11 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { ThemeContext } from "../../context/ContextProvider";
+
 import "../../styles/scss/componentsStyle/itemCard.scss";
 
-const ItemCard = (props) => {
-  const { id, name, description, price } = props.itemData;
+const ItemCard = ({ itemData }) => {
+  const { id, name, description, price } = itemData;
 
   const cart = useContext(ThemeContext);
 
@@ -15,16 +16,15 @@ const ItemCard = (props) => {
   return (
     <div className="cardSpace">
       <Link to={`/products/${id}`}>
-        <div className="cardSpace_bgShadow" />
+        <div className="cardSpace_overlay" />
         <h2 className="cardSpace_name">{name}</h2>
         <p className="cardSpace_desc">{description}</p>
       </Link>
-      <div className="cardSpace_buySpace">
-        <button className="cardSpace_addToCartBtn" onClick={addToCartHandler}>
+      <div className="cardSpace_buyBtnSpace">
+        <button className="buyBtnSpace_addToCartBtn" onClick={addToCartHandler}>
           Add to cart
         </button>
-
-        <p className="cardSpace_price">{price}zł</p>
+        <p className="buyBtnSpace_price">{price}zł</p>
       </div>
     </div>
   );

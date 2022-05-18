@@ -11,11 +11,13 @@ const ProductsPage = (props) => {
   const { shopItems } = props;
   const minPrice = useRef(0);
   const maxPrice = useRef(0);
+  const searchText = useRef("");
 
   const { filterData, changeFilterValues } = useFilter();
 
   const filterHandler = () => {
     changeFilterValues({
+      searchText: searchText.current.value || "",
       minPrice: minPrice.current.value || 0,
       maxPrice: maxPrice.current.value || null,
     });
@@ -24,40 +26,54 @@ const ProductsPage = (props) => {
   return (
     <>
       <Nav />
-      <section id="productsPage">
-        <div className="productsPage_filterSpace">
-          <h1>Filter</h1>
-          <div className="filterSpace_filter">
-            <label className="filter_title" htmlFor="">
-              Price:
-            </label>
-            <input
-              ref={minPrice}
-              className="filter_input"
-              type="number"
-              placeholder="min"
-            />
-            <input
-              ref={maxPrice}
-              className="filter_input"
-              type="number"
-              placeholder="max"
-            />
+      <section id="productsPageOuter">
+        <h1 className="productsPageOuter_cartTitle">Products</h1>
+        <div className="productsPageOuter_productsPage">
+          <div className="productsPage_filterSpace">
+            <h1 className="filterSpace_title">Filter</h1>
+            <div className="filterSpace_innerFilter">
+              <label className="innerFilter_title" htmlFor="filter_input">
+                Search:
+              </label>
+              <input
+                ref={searchText}
+                type="text"
+                className="innerFilter_input"
+                placeholder="Text..."
+              />
+            </div>
+            <div className="filterSpace_innerFilter">
+              <label className="innerFilter_title" htmlFor="">
+                Price:
+              </label>
+              <input
+                ref={minPrice}
+                className="innerFilter_input"
+                type="number"
+                placeholder="min"
+              />
+              <input
+                ref={maxPrice}
+                className="innerFilter_input"
+                type="number"
+                placeholder="max"
+              />
+            </div>
+            <div className="filterSpace_filterBtnSpace">
+              <button
+                className="filterBtnSpace_filterBtn"
+                onClick={filterHandler}
+              >
+                Filter
+              </button>
+            </div>
           </div>
-          <div className="filterSpace_filterBtnSpace">
-            <button
-              className="filterBtnSpace_filterBtn"
-              onClick={filterHandler}
-            >
-              Filter
-            </button>
+          <div className="productsPage_productsSpace">
+            {shopItems &&
+              filterItems(shopItems, filterData).map((item, index) => (
+                <ItemCard key={index} itemData={item} />
+              ))}
           </div>
-        </div>
-        <div className="productsPage_products">
-          {shopItems &&
-            filterItems(shopItems, filterData).map((item, index) => (
-              <ItemCard key={index} itemData={item} />
-            ))}
         </div>
       </section>
       <Footer />

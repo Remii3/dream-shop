@@ -1,6 +1,7 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { ThemeContext } from "../../context/ContextProvider";
+
 import "../../styles/scss/componentsStyle/nav.scss";
 
 const Nav = () => {
@@ -17,7 +18,7 @@ const Nav = () => {
         <div className="innerSection_iconSpace">
           <button
             onClick={burgerClickHandler}
-            className={`navigation_burger hamburger hamburger--collapse  ${
+            className={`iconSpace_burger hamburger hamburger--collapse  ${
               burgerActive && "is-active"
             }`}
             type="button"
@@ -27,26 +28,24 @@ const Nav = () => {
             </span>
           </button>
 
-          <p className="navigation_cart">
-            <Link to={"/cart"}>
-              <i className="fa-solid fa-cart-shopping">
-                {cart.totalAmount !== 0 && (
-                  <span className="cartItemsQuantity">{cart.totalAmount}</span>
-                )}
-              </i>
-            </Link>
-          </p>
+          <Link to={"/cart"}>
+            <i className="fa-solid fa-cart-shopping iconSpace_cart">
+              {cart.totalAmount !== 0 && (
+                <span className="cartItemsQuantity">{cart.totalAmount}</span>
+              )}
+            </i>
+          </Link>
         </div>
         <div
           className={`navigation_pages ${
             burgerActive && "navigation_pages-active"
           }`}
         >
-          <Link to={"/"}>
-            <span className="pages_link navLink1">Home</span>
+          <Link to={"/"} className={"pages_link"}>
+            <span className=" navLink1">Home</span>
           </Link>
-          <Link to={"/products"}>
-            <span className="pages_link navLink2">Products</span>
+          <Link to={"/products"} className={"pages_link"}>
+            <span className=" navLink2">Products</span>
           </Link>
         </div>
       </section>
