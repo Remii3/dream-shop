@@ -1,6 +1,6 @@
 ## Hosted page
 
-    - [(https://remii3.github.io/dream-shop/)] 
+[(https://remii3.github.io/dream-shop/)] 
 
 ## How to start
 
