@@ -39,7 +39,6 @@
         .burger_stripe::after,
         .burger_stripe::before {
           background-color: $whiteColor;
-          box-shadow: $basicShadow;
         }
 
         @media screen and (min-width: 600px) {
