@@ -131,7 +131,7 @@
 
     .titleSpace_title {
       color: $whiteColor;
-      text-shadow: $lightShadow;
+      text-shadow: $strongShadow;
       font-size: 2.1rem;
       text-align: left;
 
@@ -178,9 +178,10 @@
         box-shadow: $basicShadow;
 
         &:hover,
-        &:focus {
+        &:active {
           border-color: $decorativeColor;
           background-color: $decorativeColor;
+          color: $blackColor;
         }
       }
     }

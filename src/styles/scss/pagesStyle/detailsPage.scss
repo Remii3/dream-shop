@@ -80,14 +80,14 @@
         border-radius: 0.75rem;
         font-size: $mediumFont;
         margin-top: 0.5rem;
-        color: $decorativeColor;
+        color: $blackColor;
         cursor: pointer;
         background-color: $whiteColor;
         transition: $basicTransition;
         box-shadow: $basicShadow;
         &:hover {
           background-color: $decorativeColor;
-          color: $whiteColor;
+          color: $blackColor;
         }
         &:active {
           filter: brightness(0.6);

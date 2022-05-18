@@ -3,7 +3,7 @@ $mainColor: #00ccff;
 $secondaryColor: #cd0067;
 $decorativeColor: #ffcc00;
 $whiteColor: #fff;
-
+$blackColor: #000;
 // pageContent main container style
 
 $pageContent_minHeight: calc(100vh - (59px + 63px));
@@ -28,6 +28,6 @@ $basicTransition: all 0.3s ease;
 $basicBorderRadius: 0.75rem;
 
 // shadow
-
+$strongShadow: -0.1rem 0.1rem 5px rgba(0, 0, 0, 0.8);
 $basicShadow: -0.1rem 0.1rem 5px rgba(0, 0, 0, 0.5);
 $lightShadow: -0.1rem 0.1rem 5px rgba(0, 0, 0, 0.3);

@@ -9,7 +9,9 @@
 
   .informationSpace_nameSpace {
     width: 100%;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     .nameSpace_name {
       font-size: 1.6rem;
       display: inline-block;
@@ -61,15 +63,12 @@
       @media screen and(min-width:800px) {
         margin-top: 0;
         flex-direction: column;
+        justify-content: space-between;
       }
 
       .priceSpace_amount,
       .totalPriceSpace_amount {
         padding-top: 0;
-
-        @media screen and (min-width: 800px) {
-          padding-top: 1rem;
-        }
       }
 
       .quantitySpace_buttonSpace {
@@ -80,6 +79,7 @@
 
         @media screen and (min-width: 800px) {
           padding-top: 0.5rem;
+          align-items: flex-end;
         }
 
         .buttonSpace_amountChangeBtn {
@@ -90,19 +90,25 @@
           border: 1px solid $decorativeColor;
           width: 21px;
           font-size: $tinyFont;
-          color: $whiteColor;
+          color: $blackColor;
           margin: 0.25rem 0 0;
           border-radius: 50%;
           cursor: pointer;
           transition: $basicTransition;
-
+          position: relative;
+          top: 0;
           &:hover {
             filter: brightness(0.8);
           }
           &:active {
             filter: brightness(0.6);
           }
+
+          @media screen and (min-width: 800px) {
+            top: 10%;
+          }
         }
+
         .buttonSpace_amountChangeBtn:nth-child(1) {
           margin-right: 0.5rem;
         }
